@@ -206,10 +206,10 @@ const skyDarken = function() {
 
 
 const catTimerDone = window.setInterval(catWalk, 16);
-const sunTimeDone = window.setInterval(sunRotate, 10);
+//const sunTimeDone = window.setInterval(sunRotate, 10);
 
-// const sunTimerDone = window.setInterval(sunFall, 16);
-// const skyTimerDone = window.setInterval(skyDarken, 200);
+const sunTimerDone = window.setInterval(sunFall, 16);
+const skyTimerDone = window.setInterval(skyDarken, 200);
 
 
 

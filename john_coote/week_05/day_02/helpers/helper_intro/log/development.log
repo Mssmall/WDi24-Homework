@@ -1,0 +1,203 @@
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:41:07 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 399ms (Views: 256.9ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:46:02 +1100
+  
+SyntaxError (/Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/helpers/helper_intro/app/controllers/pages_controller.rb:9: Invalid octal digit
+    @phone = 0405770709 #2125551212
+                       ^):
+  
+app/controllers/pages_controller.rb:9: Invalid octal digit
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:46:15 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.7ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:46:58 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 36ms (Views: 33.1ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:47:45 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 26ms (Views: 23.6ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:49:29 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+SyntaxError (/Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/helpers/helper_intro/app/views/pages/numbers.html.erb:5: syntax error, unexpected ':', expecting ')'
+end=( number_to_phone @phone :area_code => true );@output_bu
+                              ^):
+  
+app/views/pages/numbers.html.erb:5: syntax error, unexpected ':', expecting ')'
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:49:48 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 29ms (Views: 26.4ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:54:18 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 17.6ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:56:24 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (150.6ms)
+Completed 500 Internal Server Error in 160ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `red' for #<#<Class:0x00007fc60fc17528>:0x00007fc6095b3750>):
+    1: <ul>
+    2:   <% @numbers.each do |n| %>
+    3:   <li style="background-color: <%=cycle(red, green, yellow) %>"><%= n %></li>
+    4:   <% end %>
+    5: </ul>
+    6: <p>You have <%= @friend_count %> friends and <%=@enemy_count %> enemies</p>
+  
+app/views/pages/text.html.erb:3:in `block in _app_views_pages_text_html_erb__1952202343604303568_70244281147700'
+app/views/pages/text.html.erb:2:in `each'
+app/views/pages/text.html.erb:2:in `_app_views_pages_text_html_erb__1952202343604303568_70244281147700'
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:56:47 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (157.2ms)
+Completed 500 Internal Server Error in 166ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `red' for #<#<Class:0x00007fc60fc17528>:0x00007fc60fbc1c68>):
+    1: <ul>
+    2:   <% @numbers.each do |n| %>
+    3:   <li style="background-color: <%=cycle(red, green) %>"><%= n %></li>
+    4:   <% end %>
+    5: </ul>
+    6: <p>You have <%= @friend_count %> friends and <%=@enemy_count %> enemies</p>
+  
+app/views/pages/text.html.erb:3:in `block in _app_views_pages_text_html_erb__1952202343604303568_70244322120600'
+app/views/pages/text.html.erb:2:in `each'
+app/views/pages/text.html.erb:2:in `_app_views_pages_text_html_erb__1952202343604303568_70244322120600'
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:57:10 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:59:01 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (159.0ms)
+Completed 500 Internal Server Error in 169ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `enemy' for #<#<Class:0x00007fc60fc17528>:0x00007fc60f24e780>):
+     5: </ul>
+     6: 
+     7: 
+     8: <p>You have <%= pluralize(@friend_count, 'friend') %> and <%=  pluralize(@enemy_count, enemy) %></p>
+     9: 
+    10: <p><%= @story %></p>
+  
+app/views/pages/text.html.erb:8:in `_app_views_pages_text_html_erb__1952202343604303568_70244317165860'
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 10:59:17 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 20.3ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 10:59:21 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 17.7ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 11:01:37 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 15.4ms)
+
+
+Started GET "/url" for 127.0.0.1 at 2017-11-21 11:29:20 +1100
+Processing by PagesController#url as HTML
+  Rendering pages/url.html.erb within layouts/application
+  Rendered pages/url.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 11:29:23 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 18.1ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-11-21 11:30:06 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/john/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/john/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [5 times] (1.9ms)
+  Rendered /Users/john/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.1ms)
+  Rendered /Users/john/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 30ms (Views: 24.7ms)
+
+
+Started GET "/url" for 127.0.0.1 at 2017-11-21 11:31:26 +1100
+Processing by PagesController#url as HTML
+  Rendering pages/url.html.erb within layouts/application
+  Rendered pages/url.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 16.2ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 11:31:27 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 24.0ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2017-11-21 11:31:30 +1100
+Processing by PagesController#text as HTML
+  Rendering pages/text.html.erb within layouts/application
+  Rendered pages/text.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 22.4ms)
+
+
+Started GET "/url" for 127.0.0.1 at 2017-11-21 11:31:33 +1100
+Processing by PagesController#url as HTML
+  Rendering pages/url.html.erb within layouts/application
+  Rendered pages/url.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 20.3ms)
+
+
+Started GET "/numbers" for 127.0.0.1 at 2017-11-21 11:34:36 +1100
+Processing by PagesController#numbers as HTML
+  Rendering pages/numbers.html.erb within layouts/application
+  Rendered pages/numbers.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 13.5ms)
+
+

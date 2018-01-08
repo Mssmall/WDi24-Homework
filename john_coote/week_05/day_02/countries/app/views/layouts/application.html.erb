@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countries</title>
+    <%= csrf_meta_tags %>
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to 'Home', root_path %> <%= link_to 'Map', country_map_path %>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

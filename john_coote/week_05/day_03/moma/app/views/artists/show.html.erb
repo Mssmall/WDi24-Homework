@@ -1,0 +1,23 @@
+<h1><%= @artist.name %></h1>
+
+<%= image_tag(@artist.image, :class => 'feature') %>
+
+<ul>
+  <li><%= @artist.name  %></li>
+  <!-- min code would be
+  link_to artist.name artist_path(artist) or
+  link_to artist.name artist -->
+  <li><%= @artist.nationality %></li>
+  <li><%= @artist.dob.strftime '%A %B %e %Y' unless @artist.dob.nil? %></li>
+  <li><%= @artist.period %></li>
+</ul>
+
+<% @artist.works.each do |work| %>
+<%= link_to image_tag(work.image, :class => 'thumb'), work %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Delete Artist', @artist, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+  <%= link_to "Edit Artist", edit_artist_path(@artist) %>
+
+</div>

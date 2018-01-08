@@ -1,0 +1,29 @@
+<h2>MAP</h2>
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<!-- <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {
+    'packages':['geochart'],
+    // Note: you will need to get a mapsApiKey for your project.
+    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+    'mapsApiKey': 'AIzaSyB7nJABK2HEiQKo4V-FCEMWX5xag8vVJeA'
+  });
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+  function drawRegionsMap() {
+    var myJsArray = <%=raw @big_array%>;
+    var data = google.visualization.arrayToDataTable(myJsArray);
+
+    var options = {};
+
+    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+
+<div id="regions_div" style="width: 900px; height: 500px;"></div>

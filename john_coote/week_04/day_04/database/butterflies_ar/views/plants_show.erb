@@ -1,0 +1,11 @@
+<h2><%= @plant.name %></h2>
+
+
+<% unless @plant.image.nil?  %>
+  <img src="<%= @plant.image %>" alt="" class="feature">
+<% end %>
+
+<div class="controls">
+  <a href="/plants/<%= @plant.id %>/delete">Delete Plant</a>
+  <a href="/plants/<%= @plant.id %>/edit">Edit Plant</a>
+</div>

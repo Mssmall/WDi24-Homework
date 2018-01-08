@@ -7,24 +7,35 @@
   </head>
   <body>
 
-    <div class="container">
+    <div id="container">
 
-      <nav>
-        <a href="/">Home</a>
-        |
-        <a href="/boulders">All Boulders</a>
-        <a href="/boulders/new">New Boulder</a>
-        |
-        <a href="/countries">All Countries</a>
-        <a href="/countries/new">New Country</a>
+      <header>
 
-      </nav>
+        <div class="inner header">
 
-      <h1>Bouldery Boulders</h1>
+          <h1 class="logo">
+            <a href="/">Bouldery Boulders</a>
+          </h1>
 
-      <p>The hardest of hard climbs</p>
+          <nav>
 
-      <%= yield %>
+            <a href="/boulders">All Boulders</a>
+            <a href="/boulders/new">New Boulder</a>
+            |
+            <a href="/countries">All Countries</a>
+            <a href="/countries/new">Add Country</a>
+
+          </nav>
+
+        </div>
+
+      </header>
+
+      <main id="content">
+
+        <%= yield %>
+
+      </main>
 
     </div>
 

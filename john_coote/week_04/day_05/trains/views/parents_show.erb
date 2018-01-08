@@ -1,0 +1,90 @@
+<h2>Detailed Information for
+  <%= @parent.name %></h2>
+
+<% @prev = @parent.id - 1  %>
+<% @next = @parent.id + 1  %>
+<!-- Yes, should have error trapping for 0 and parents.max... -->
+
+
+
+<div class="flex_container">
+  <div class="box twenty">
+    <h3>
+      <a href="/parents/<%= @parent.id %>/edit">Click to edit this record</a>
+    </h3>
+  </div>
+
+  <div class="box twenty">
+    <h4>
+      <a href="/parents/<%= @prev %>">Previous Record</a>
+    </h4>
+  </div>
+
+  <div class="box twenty">
+    <h4>
+      <a href="/parents/<%= @next %>">Next Record</a>
+    </h4>
+  </div>
+
+  <div class="box twenty">
+    <h4>
+      <a href="/">Home</a>
+    </h4>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="flex_container">
+  <div class="box forty">
+    <p>This station is
+      <%= @parent.name %></p>
+
+    <% unless @parent.image.nil?  %>
+      <img src="<%= @parent.image %>" alt="" class="feature">
+    <% end %>
+  </div>
+
+  <div class="box forty">
+    <div class="">
+
+
+    <h3>Connections to
+      <%= @parent.name %></h3>
+    <!-- Gets list of all connections -->
+    <% @children.each do |child| %>
+      <% if child.parent_id == @parent.id %>
+        <li>
+          <%= child.name %>
+        </li>
+      <% end %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="flex_container">
+
+  <div class="box forty">
+    <p>Closest good place to eat is
+      <%= @parent.fav_rest %></p>
+
+    <% unless @parent.fav_rest_img.nil?  %>
+      <img src="<%= @parent.fav_rest_img %>" alt="" class="feature">
+    <% end %>
+  </div>
+
+  <div class="box forty">
+    <% unless @parent.mapref.nil? ||  @parent.fav_rest_mapref.nil? %>
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="<%= @gmapURL %>" allowfullscreen="allowfullscreen"></iframe>
+    <% end %>
+  </div>
+
+</div>
+
+<!-- width="600" height="450" -->
+    <!-- Google maps API Key = AIzaSyB7nJABK2HEiQKo4V-FCEMWX5xag8vVJeA -->

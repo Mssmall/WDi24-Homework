@@ -36,15 +36,16 @@ end
 
 # Create
 post '/boulders' do
+  # TODO: country/boulder association
   country = Country.new
-  country.name = params[:country].capitalize
+  country.name = params[:country]
   country.save
   boulder = Boulder.new
-  boulder.name = params[:name]
+  boulder.name = params[:name].capitalize
   boulder.grade = params[:grade]
-  boulder.crag = params[:crag]
+  boulder.crag = params[:crag].capitalize
   boulder.country_id = country.id
-  boulder.ascensionists = params[:ascensionists]
+  boulder.ascensionists = params[:ascensionists].capitalize
   boulder.image = params[:image]
   boulder.save
 
@@ -68,10 +69,11 @@ post '/boulders/:id' do
   boulder = Boulder.find params[:id]
   boulder.update :name => params[:name],
                  :grade => params[:grade],
-                 :crag => params[:crag],
-                 :ascensionists => params[:ascensionists],
+                 :crag => params[:crag].capitalize,
+                 :ascensionists => params[:ascensionists].capitalize,
                  :image => params[:image]
-  boulder.country.update :name => params[:country]
+  # TODO: country/boulder association
+  boulder.country.update :name => params[:country.capitalize]
 
   redirect to("/boulders/#{ boulder.id }")
 end

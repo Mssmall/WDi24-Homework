@@ -1,0 +1,6 @@
+<h2>show page</h2>
+
+<li><%= @country.id %> / <%= @country.name %> / <%= @country.population %> / <%= @country.cups %> / <%= @country.capital %></li>
+
+<p><%= link_to "Edit #{ @country.name }", country_edit_path(@country.id) %></p>
+<p><%= button_to "DESTROY #{ @country.name.upcase }", country_destroy_path(@country.id), :method => 'delete'%></p>

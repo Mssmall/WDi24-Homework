@@ -1,0 +1,557 @@
+Started GET "/" for 127.0.0.1 at 2017-11-21 07:40:34 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/john/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/john/.rvm/gems/ruby-2.4.2/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 191ms (Views: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 07:46:57 +1100
+  
+LoadError (Unable to autoload constant PagesController, expected /Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/practice/rails_practice_01/app/controllers/pages_controller.rb to define it):
+  
+activesupport (5.1.4) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+activesupport (5.1.4) lib/active_support/dependencies.rb:202:in `const_missing'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+activesupport (5.1.4) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.1.4) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:99:in `binary_params_for?'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:90:in `set_binary_encoding'
+actionpack (5.1.4) lib/action_dispatch/http/parameters.rb:67:in `path_parameters='
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 07:48:36 +1100
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 92ms
+
+
+  
+ActionController::UnknownFormat (PagesController#home is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 07:49:29 +1100
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 81ms
+
+
+  
+ActionController::UnknownFormat (PagesController#home is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 07:51:44 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 221ms (Views: 218.4ms)
+
+
+Started GET "/test" for 127.0.0.1 at 2017-11-21 07:53:15 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/test"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/test" for 127.0.0.1 at 2017-11-21 07:53:29 +1100
+Processing by PagesController#test as HTML
+  Rendering pages/test.html.erb within layouts/application
+  Rendered pages/test.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 15.8ms)
+
+
+Started GET "/testing/testing" for 127.0.0.1 at 2017-11-21 07:56:41 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 15.1ms)
+
+
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:01:22 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.2ms)
+
+
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:04:47 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/testing_controller.rb:8:in `calculator'
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:05:18 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.2ms)
+
+
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:09:54 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.6ms)
+
+
+Started GET "/testing/testing/2/5/-" for 127.0.0.1 at 2017-11-21 08:10:09 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"2", "num2"=>"5", "operator"=>"-"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms)
+
+
+Started GET "/testing/testing/2/5/*" for 127.0.0.1 at 2017-11-21 08:10:14 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"2", "num2"=>"5", "operator"=>"*"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.6ms)
+
+
+Started GET "/testing/testing/2/5//" for 127.0.0.1 at 2017-11-21 08:10:19 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/testing/testing/2/5"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/testing/testing/2/5/s" for 127.0.0.1 at 2017-11-21 08:11:33 +1100
+  
+SyntaxError (/Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/practice/rails_practice_01/app/controllers/testing_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/testing_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/testing/testing/2/5/s" for 127.0.0.1 at 2017-11-21 08:12:22 +1100
+  
+SyntaxError (/Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/practice/rails_practice_01/app/controllers/testing_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/testing_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/testing/testing/2/5/s" for 127.0.0.1 at 2017-11-21 08:12:41 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"2", "num2"=>"5", "operator"=>"s"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.2ms)
+
+
+Started GET "/testing/testing/2/5/s" for 127.0.0.1 at 2017-11-21 08:28:15 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"2", "num2"=>"5", "operator"=>"s"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/testing/testing/2/5/s" for 127.0.0.1 at 2017-11-21 08:28:34 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"2", "num2"=>"5", "operator"=>"s"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.7ms)
+
+
+Started GET "/testing/testing" for 127.0.0.1 at 2017-11-21 08:31:02 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 15.3ms)
+
+
+Started GET "/testing/testing/:num1/:num2/:operator?num1=100&num2=99&operator=%2B" for 127.0.0.1 at 2017-11-21 08:31:09 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>":num1", "num2"=>":num2", "operator"=>":operator"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms)
+
+
+Started GET "/testing/testing/num1=100&num2=99&operator=%2B" for 127.0.0.1 at 2017-11-21 08:32:02 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/testing/testing/num1=100&num2=99&operator=%2B"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/testing/testing/:num1/:num2/:operator?num1=100&num2=99&operator=%2B" for 127.0.0.1 at 2017-11-21 08:41:48 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>":num1", "num2"=>":num2", "operator"=>":operator"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms)
+
+
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:41:58 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.3ms)
+
+
+Started GET "/testing/testing/1/2/+" for 127.0.0.1 at 2017-11-21 08:42:00 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"1", "num2"=>"2", "operator"=>"+"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.9ms)
+
+
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:42:09 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.4ms)
+
+
+Started GET "/testing/testing/a?num1a=1&num2a=2&operatora=3" for 127.0.0.1 at 2017-11-21 08:42:16 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"1", "num2a"=>"2", "operatora"=>"3"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.6ms)
+
+
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:46:14 +1100
+  
+SyntaxError (/Users/john/Projects/WDi24-Homework/john_coote/week_05/day_02/practice/rails_practice_01/app/controllers/testing_controller.rb:17: syntax error, unexpected tIVAR, expecting ']'
+    @num1a = @num1a.to_f
+          ^):
+  
+app/controllers/testing_controller.rb:17: syntax error, unexpected tIVAR, expecting ']'
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:46:34 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.4ms)
+
+
+Started GET "/testing/testing/a?num1a=1&num2a=2&operatora=-" for 127.0.0.1 at 2017-11-21 08:46:42 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"1", "num2a"=>"2", "operatora"=>"-"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 22.9ms)
+
+
+Started GET "/testing/testing/a?num1a=1&num2a=2&operatora=-" for 127.0.0.1 at 2017-11-21 08:47:15 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"1", "num2a"=>"2", "operatora"=>"-"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.6ms)
+
+
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:47:20 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.9ms)
+
+
+Started GET "/testing/testing/a?num1a=1&num2a=2&operatora=-" for 127.0.0.1 at 2017-11-21 08:47:25 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"1", "num2a"=>"2", "operatora"=>"-"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.8ms)
+
+
+Started GET "/testing/testing/5/5/*" for 127.0.0.1 at 2017-11-21 08:48:47 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5", "operator"=>"*"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.0ms)
+
+
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:48:57 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.7ms)
+
+
+Started GET "/testing/testing/a?num1a=5&num2a=7&operatora=*" for 127.0.0.1 at 2017-11-21 08:49:05 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"5", "num2a"=>"7", "operatora"=>"*"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.0ms)
+
+
+Started GET "/testing/testing/" for 127.0.0.1 at 2017-11-21 08:50:35 +1100
+Processing by TestingController#testing as HTML
+  Rendering testing/testing.html.erb within layouts/application
+  Rendered testing/testing.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 22ms (Views: 19.7ms)
+
+
+Started GET "/testing/testing/a?num1a=4&num2a=7&operatora=*" for 127.0.0.1 at 2017-11-21 08:50:43 +1100
+Processing by TestingController#calculator as HTML
+  Parameters: {"num1a"=>"4", "num2a"=>"7", "operatora"=>"*"}
+  Rendering testing/calculator.html.erb within layouts/application
+  Rendered testing/calculator.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.9ms)
+
+

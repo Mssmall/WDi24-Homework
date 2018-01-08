@@ -1,0 +1,19 @@
+<h2>
+  butterfly count: <%= @butterflies.count %>
+</h2>
+
+
+<% if 7 > 50 %>
+<p>seven greater than fifty</p>
+<% else %>
+<p>something else</p>
+<% end %>
+
+<% @butterflies.each do |butterfly| %>
+<ul>
+  <li>
+    <a href="/butterflies/<%= butterfly['id'] %>"><%=butterfly['name']%> </a>
+  </li>
+</ul>
+
+<%end %>

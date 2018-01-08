@@ -1,0 +1,16 @@
+<h1>All Works</h1>
+
+<% @works.each do |work| %>
+
+<%= link_to image_tag(work.image, :class => 'thumb'), work %>
+<ul>
+  <li><%= link_to work.title, work_path(work.id)  %></li>
+  <!-- min code would be
+  link_to artist.name artist_path(artist) or
+  link_to artist.name artist -->
+  <li><%= work.year %></li>
+  <li><%= work.medium %></li>
+  <li><%= work.style %></li>
+</ul>
+
+  <% end  %>

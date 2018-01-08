@@ -1,0 +1,27 @@
+body {
+  background-color: pink;
+  color: white;
+  margin: 0;
+}
+
+a {
+  color: limegreen;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  min-height: 90vh;
+  background-color: #222
+}
+
+nav {
+  text-align: right;
+}
+
+img.feature {
+  display: block;
+  margin: auto;
+  max-width: 100%
+}

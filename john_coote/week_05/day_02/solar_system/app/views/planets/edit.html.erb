@@ -1,0 +1,11 @@
+<h2>Planet edit form</h2>  - not working !!
+
+<form class="" action="<%= planet_path(@planet.id) %>" method="post">
+  Name: <input type="text" placeholder="" name="name" value="<%= @planet.name %>" autofocus>
+  Image<input type="url" placeholder="" name="image" value="<%= @planet.image %>">
+  Orbit<input type="number" placeholder="" name="orbit" value="<%= @planet.orbit %>">
+  Diameter<input type="number" placeholder="" name="diameter" value="<%= @planet.diameter %>">
+  Mass<input type="number" placeholder="" name="mass" value="<%= @planet.mass %>">
+  Moons<input type="number" placeholder="" name="moons" value="<%= @planet.moons %>">
+  <button>Edit Planet</button>
+</form>

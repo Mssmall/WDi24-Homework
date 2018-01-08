@@ -7,6 +7,7 @@ CREATE TABLE boulders (
   country_id INT,
   ascensionists TEXT,
   image TEXT,
+  -- TODO: country/boulder association
   FOREIGN KEY(country_id) REFERENCES countries
 );
 

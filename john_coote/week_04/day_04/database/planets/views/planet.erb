@@ -1,0 +1,13 @@
+<h2><%= @planet['name'] %></h2>
+
+
+<p>
+<%= @planet['name'] %> takes <%= @planet['period'] %> days to complete one orbit. It has an average distance of <%= @planet['radius'] %>km from the sun.
+
+</p>
+
+<% unless @planet['image'].nil? %>
+<img src="<%= @planet['image'] %>" alt="<%= @planet['name'] %>">
+<% end %>
+
+<a href="edit/<%= @planet['id'] %>">Edit This Planet</a>

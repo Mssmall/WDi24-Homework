@@ -1,0 +1,73 @@
+-- -- The first pass, create tables and seed data
+--
+-- CREATE TABLE parents (
+--   id INTEGER PRIMARY KEY AUTOINCREMENT,
+--   name TEXT,
+--   mapref TEXT,
+--   image TEXT,
+--   fav_rest TEXT,
+--   fav_rest_img TEXT
+-- );
+--
+-- CREATE TABLE childs (
+--   id INTEGER PRIMARY KEY AUTOINCREMENT,
+--   name TEXT,
+--   distance_from_parent INTEGER,
+--   parent_id INTEGER
+-- );
+--
+-- -- seed data
+-- INSERT INTO parents (name) VALUES ('Brooklyn');
+-- INSERT INTO parents (name) VALUES ('Hornsby');
+-- INSERT INTO parents (name) VALUES ('Epping');
+-- INSERT INTO parents (name) VALUES ('Chatswood');
+--
+--
+-- INSERT INTO parents (name) VALUES ('Strathfield');
+-- INSERT INTO parents (name) VALUES ('Central');
+-- INSERT INTO parents (name) VALUES ('Sydneham');
+-- INSERT INTO parents (name) VALUES ('Campbelltown');
+-- INSERT INTO parents (name) VALUES ('Liverpool');
+-- INSERT INTO parents (name) VALUES ('Bankstown');
+-- INSERT INTO parents (name) VALUES ('Lidcombe');
+-- INSERT INTO parents (name) VALUES ('Blacktown');
+-- INSERT INTO parents (name) VALUES ('Penrith');
+-- INSERT INTO parents (name) VALUES ('Richmond');
+-- INSERT INTO childs (name, parent_id) VALUES ('Hornsby', 1);
+-- INSERT INTO childs (name, parent_id) VALUES ('Brooklyn', 2);
+-- INSERT INTO childs (name, parent_id) VALUES ('Epping', 2);
+-- INSERT INTO childs (name, parent_id) VALUES ('Chatswood', 2);
+-- INSERT INTO childs (name, parent_id) VALUES ('Chatswood', 3);
+-- INSERT INTO childs (name, parent_id) VALUES ('Hornsby', 3);
+-- INSERT INTO childs (name, parent_id) VALUES ('Strathfield', 3);
+-- INSERT INTO childs (name, parent_id) VALUES ('Epping', 4);
+-- INSERT INTO childs (name, parent_id) VALUES ('Hornsby', 4);
+-- INSERT INTO childs (name, parent_id) VALUES ('Central', 4);
+-- INSERT INTO childs (name, parent_id) VALUES ('Central', 5);
+-- INSERT INTO childs (name, parent_id) VALUES ('Epping', 5);
+-- INSERT INTO childs (name, parent_id) VALUES ('Bankstown', 5);
+-- INSERT INTO childs (name, parent_id) VALUES ('Lidcombe', 5);
+-- INSERT INTO childs (name, parent_id) VALUES ('Chatswood', 6);
+-- INSERT INTO childs (name, parent_id) VALUES ('Strathfield', 6);
+-- INSERT INTO childs (name, parent_id) VALUES ('Sydneham', 6);
+-- INSERT INTO childs (name, parent_id) VALUES ('Central', 7);
+-- INSERT INTO childs (name, parent_id) VALUES ('Bankstown', 7);
+-- INSERT INTO childs (name, parent_id) VALUES ('Campbelltown', 7);
+-- INSERT INTO childs (name, parent_id) VALUES ('Sydneham', 8);
+-- INSERT INTO childs (name, parent_id) VALUES ('Liverpool', 8);
+-- INSERT INTO childs (name, parent_id) VALUES ('Campbelltown', 9);
+-- INSERT INTO childs (name, parent_id) VALUES ('Bankstown', 9);
+-- INSERT INTO childs (name, parent_id) VALUES ('Lidcombe', 9);
+-- INSERT INTO childs (name, parent_id) VALUES ('Blacktown', 9);
+-- INSERT INTO childs (name, parent_id) VALUES ('Liverpool', 10);
+-- INSERT INTO childs (name, parent_id) VALUES ('Strathfield', 10);
+-- INSERT INTO childs (name, parent_id) VALUES ('Sydneham', 10);
+-- INSERT INTO childs (name, parent_id) VALUES ('Strathfield', 11);
+-- INSERT INTO childs (name, parent_id) VALUES ('Liverpool', 11);
+-- INSERT INTO childs (name, parent_id) VALUES ('Blacktown', 11);
+-- INSERT INTO childs (name, parent_id) VALUES ('Lidcombe', 12);
+-- INSERT INTO childs (name, parent_id) VALUES ('Liverpool', 12);
+-- INSERT INTO childs (name, parent_id) VALUES ('Penrith', 12);
+-- INSERT INTO childs (name, parent_id) VALUES ('Richmond', 12);
+-- INSERT INTO childs (name, parent_id) VALUES ('Blacktown', 13);
+-- INSERT INTO childs (name, parent_id) VALUES ('Blacktown', 14);

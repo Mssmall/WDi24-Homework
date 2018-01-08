@@ -1,0 +1,12 @@
+<h1>Cities#show</h1>
+<p>Find me in app/views/cities/show.html.erb</p>
+
+<%= @city.name %>
+<%= @city.population %>
+
+<%= @city.country.name %>
+
+<div class="controls">
+  <%= link_to "Edit", edit_city_path(@city) %>
+  <%= link_to 'Delete City', @city, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="box">
+    <h2>List of all countries</h2>
+
+
+      <% @countries.each do |country| %>
+      <p><%= link_to country.name, country_show_path(country.id) %></p>
+      <% end %>
+
+
+    <p><%= link_to 'Enter a New Country', country_new_path %></p>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,13 @@
+<h2>Planets Page - A list of planets</h2>
+
+<%= @planets %>
+
+<% @planets.each do |planet| %>
+<ul>
+  <li><%= planet['id'] %> <%= planet['name'] %>
+    <a href="planet/<%= planet['id'] %>"><%= planet['name'] %></a>
+  </li>
+</ul>
+
+
+<% end %>

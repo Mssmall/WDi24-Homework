@@ -1,0 +1,14 @@
+<h2>
+  butterfly count: <%= @plants.count %>
+</h2>
+
+
+
+<% @plants.each do |plant| %>
+<ul>
+  <li>
+    <a href="/plants/<%= plant.id %>"><%= plant.name %> </a>
+  </li>
+</ul>
+
+<%end %>

@@ -1,0 +1,22 @@
+<h2>Children Index</h2>
+
+<ul>
+
+<% @children.each do |child| %>
+  <li>
+    <%= child.name %></a>
+  </li>
+<% end %>
+
+
+</ul>
+
+
+<p>There are so many "children" becuase each station is likely the child of several other stations. Perhaps it would have made sense to name them something like parent.child eg epping.strathfield, but that's not how I did it. :-( </p>
+<p>In fact I think that the best solution would <strong>likely</strong> have involved using a many-to-many table with each recdord in that table having a parent ID and a child ID. Maybe I'll try that if time permits. But I bet time doesnt permit.</p>
+<p>There's no method here fot updating or eiting this list becuase
+<ul>
+  <li>It's the same code as adding / editing the parent list.</li>
+  <li>it will probably break other bits of the code.</li>
+</ul>
+</p>

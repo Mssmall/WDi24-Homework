@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  netflix: false
+  released: 2017-11-20
+  rating: MyString
+  description: MyText
+
+two:
+  title: MyString
+  netflix: false
+  released: 2017-11-20
+  rating: MyString
+  description: MyText

@@ -1,0 +1,12 @@
+<h2>Edit Page for <%=@planet['name']%></h2>
+
+
+
+
+<form class="" action="/planet/<%=@planet['id']%>" method="post">
+  <input type="text" name="name" value="<%=@planet['name']%>">
+  <input type="text" name="period" value="<%=@planet['period']%>">
+  <input type="text" name="radius" value="<%=@planet['radius']%>">
+  <input type="text" name="image" value="<%=@planet['image']%>">
+  <button>Just a dumb button</button>
+</form>

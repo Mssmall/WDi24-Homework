@@ -1,0 +1,15 @@
+<h1>Edit <%= @country.name %></h1>
+
+<form class="" action="<%= country_update_path(@country.id) %>" method="post">
+  <ul>
+    <li>Country Name: <input type="text" name="name" value="<%= @country.name %>"></li>
+    <li>Population:<input type="text" name="population" value="<%= @country.population %>"></li>
+    <li>Capital City<input type="text" name="capital" value="<%= @country.capital %>"></li>
+    <li>World Cup Wins<input type="text" name="cups" value="<%= @country.cups %>"></li>
+  </ul>
+<button>Button</button>
+
+
+
+
+</form>

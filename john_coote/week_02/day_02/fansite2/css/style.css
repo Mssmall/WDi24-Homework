@@ -1,0 +1,95 @@
+* {
+  border-radius: 5px;
+  vertical-align: top;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #262228;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #0375B4;
+  width: 960px;
+  margin: 2px auto;
+  padding: 1px;
+}
+
+.headline {
+  background-color: #FFCE00;
+  width: 80%;
+  margin: 1em auto;
+  border: 2px solid #262228;
+}
+
+h1, h3 {
+  padding: 0px 0px 0px 4px;
+  font-family: 'Patua One', cursive;
+}
+
+h5 {
+  text-align: right;
+  padding: 0px 10px 0px 4px;
+}
+
+.nav {
+  background-color: #FFCE00;
+  width: 100%;
+  margin: 20px 2px 2px 2px;
+  border: 2px solid #262228;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0 5px 0px 3px;
+  text-decoration: none;
+}
+
+.others {
+  background-color: #FFCE00;
+  width: 100%;
+  margin: 20px 2px 2px 2px;
+  border: 2px solid #262228;
+}
+
+.main {
+  background-color: #007849;
+  width: 80%;
+  margin: 1em auto;
+  border: 2px solid #262228;
+}
+
+.story {
+  width:65%;
+  display: inline-block;
+  padding: 10px 12px 20px 4px;
+  color: white;
+}
+
+.aside {
+  width: 30%;
+  display: inline-block;
+
+}
+
+.footer {
+  background-color: #FFCE00;
+  width: 80%;
+  margin: 1em auto;
+  border: 2px solid #262228;
+}
+
+
+.floatleft {
+  float: left;
+  margin: 0px 10px 3px 0px;
+}
+
+.floatright {
+  float: right;
+  margin: 0px 3px 0px 10px;
+}

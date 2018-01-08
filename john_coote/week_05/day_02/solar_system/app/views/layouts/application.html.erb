@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SolarSystem</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <nav>
+    <%= link_to 'All Planets', root_path %>
+    <%= link_to 'New Planets', planets_new_path %>
+
+
+  </nav>
+
+
+    <%= yield %>
+  </body>
+</html>
