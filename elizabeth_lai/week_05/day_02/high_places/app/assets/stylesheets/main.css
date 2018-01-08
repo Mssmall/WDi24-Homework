@@ -8,18 +8,25 @@ body {
   background-color: white;
   font-weight: bold;
   border-radius: 20px;
-  max-width: 1060px;
+  max-width: 960px;
   height: 700px;
-  padding: 10px;
-  border: 10px;
-  margin 0 auto;
+  padding: 10px 10px 20px 10px;
+  /*border: 10px;*/
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  box-shadow: 5px 5px 5px #FFFFFF;
+}
+
+form {
+  text-align: : left;
 }
 
 .fronthead {
   font-size: 50px;
 }
 .gc {
-  max-width: 50vw;
+  max-height: 50vh;
 }
 
 ul {
@@ -29,4 +36,16 @@ ul {
 
 li {
   list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  top: 200px;
+  /*z-index: 2;*/
 }

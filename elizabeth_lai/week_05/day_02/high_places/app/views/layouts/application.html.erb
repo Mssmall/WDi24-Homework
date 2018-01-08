@@ -13,9 +13,11 @@
     <!-- <container> -->
     <div class="container">
     <nav>
-      <%= link_to 'All parks', root_path %>
-      <%= link_to 'New parks', parks_new_path %>
+      <ul>
+      <li><%= link_to 'All parks', root_path %></li>
+      <li><%= link_to 'New parks', parks_new_path %></li>
     </nav>
+    </ul>
     <%= yield %>
 
   </div>
