@@ -1,0 +1,22 @@
+<%= form_for @book do |f| %>
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</fieldset>
+<fieldset>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+</fieldset>
+<fieldset>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+</fieldset>
+<fieldset>
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+</fieldset>
+<fieldset>
+  <label></label>
+  <%= f.submit %>
+</fieldset>
+<% end %>

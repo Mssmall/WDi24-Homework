@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/secretnumber/answer' => 'secretnumber#answer'
 
   get '/rps/form'
+  get '/rps/:throw'
+  get '/rps/result' =>
   # get '/rock_paper_scissors/:throw' => games#rock_paper_scissors_play
 
 end
